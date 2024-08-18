@@ -2,11 +2,16 @@
 
 import streamlit as st
 from PIL import Image,ImageOps,ImageFilter
-import matplotlib.pyplot as plt
 import requests
 import random
+import matplotlib.pyplot as plt
 import time
 import os
+l1=['1992年9月29日','1993年9月29日','1992年9月26日','1993年9月26日']
+l2=['2017年10月26日','2017年11月6日','2017年11月16日','2017年11月26日']
+l3=['少管我','警报','大鱼','重启']
+l4=['30$','30RMB','50$','50RMB']
+l5=['反深代词','深的深','玫瑰与小鹿','小美满']
 myDir = 'musics'
 files = sorted(os.listdir(myDir))
 musics = []
@@ -444,8 +449,8 @@ def page_9():
     col1_1, col1_2, col1_3, col1_4 = st.columns([1, 1, 1, 1])
     choice1 = st.radio(
         '周深的生日是?(送分题)',
-        random.choice(['1992年9月29日','1993年9月29日','1992年9月26日','1993年9月26日'],
-                     captions=['', '', '',''])
+        l1,
+        captions=[' ', ' ',' ',' ']
     )
     if choice1=='1992年9月29日':
         score+=5
@@ -455,17 +460,17 @@ def page_9():
     st.write('')
     choice2 = st.radio(
         '深的深的发行日期是?',
-        random.choice(['2017年10月26日','2017年11月6日','2017年11月16日','2017年11月26日'],
-                     captions=['', '', '',''])
+        l2,
+        captions=[' ', ' ', ' ',' ']
     )
-    if choice2=='2017年10月26日':
+    if choice2=='2017年11月6日':
         score+=15
     else:
         score-=10
     choice3 = st.radio(
         '周深的第二个专辑的第3首歌是?',
-        random.choice(['少管我','警报','大鱼','重启'],
-                     captions=[' ', ' ', ' ',''])
+        l3,
+        captions=[' ', ' ', ' ',' ']
     )
     if choice3=='重启':
         score+=15
@@ -473,22 +478,22 @@ def page_9():
         score-=20
     else:
         score-=10
-    choice5 = st.radio(
+    choice4 = st.radio(
         '周深的第二个专辑的价格是?',
-        random.choice(['30$','30RMB','50$','50RMB'],
-                     captions=[' ', ' ', ' ',' '])
+        l4,
+        captions=[' ', ' ', ' ',' ']
     )
-    if choice5=='30RMB':
+    if choice4=='30RMB':
         score+=15
     else:
         score-=25
     #50
-    choice6 = st.radio(
+    choice5 = st.radio(
         '周深的第二个专辑的名称是(送分题)?',
-        random.choice(['反深代词','深的深','玫瑰与小鹿','小美满'],
-                     captions=[' ', ' ', ' ',' '])
+        l5,
+        captions=[' ', ' ', ' ',' ']
     )
-    if choice3=='反深代词':
+    if choice5=='反深代词':
         score+=15
     else:
         score-=20
