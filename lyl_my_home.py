@@ -503,8 +503,8 @@ def page_9():
         l6,
         captions=[' ', ' ', ' ',' ']
     )
-    if choice6=='反深代词':
-        score+=10
+    if choice6=="2024年5月19日":
+        score+=15
     else:
         score-=5
     st.write('下面那些歌是周深的?')
@@ -513,7 +513,7 @@ def page_9():
     c3=st.checkbox("Intro")
     c4=st.checkbox("花开忘忧")
     if c1 and c4 and ~c2 and ~c3:
-        score+=25
+        score+=30
     else:
         score-=5
     if st.button("交卷"):
