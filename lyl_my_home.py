@@ -2,6 +2,7 @@
 
 import streamlit as st
 from PIL import Image,ImageOps,ImageFilter
+import matplotlib.pyplot as plt
 import requests
 import random
 import time
