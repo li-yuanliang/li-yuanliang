@@ -71,10 +71,10 @@ def page_2():
     st.write('----------------------------------------------------------------反深代词----------------------------------------------------------------')
     st.image("images/反深代词.png")
     for music in musics:
-        st.write(musics_names[musics.index(music)]+"(音量有些大,可以先调`小`一点哦)")
+        st.write(musics+"(音量有些大,可以先调`小`一点哦)")
         with open("musics/"+music,"rb") as f:
             mymp3=f.read()
-        st.audio(mymp3,format='audio/wav',start_time=0)
+        st.audio(mymp3,format='audio/mp3',start_time=0)
     st.write('------')
     st.write('我的网站分享')
     with open("webs.txt","r",encoding="utf-8") as f:
