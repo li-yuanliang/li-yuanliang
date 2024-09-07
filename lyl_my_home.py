@@ -22,7 +22,7 @@ musics_names=sorted(['周深 - Wala li longla.wav', '周深 - 嗨.wav',
               '周深 - 少管我.wav', '周深 - 空壳.wav', 
               '周深 - 缝合.wav', '周深 - 蜃楼.wav', 
               '周深 - 警报.wav', '周深 - 记忆商店.wav', 
-              '周深 - 重启.wav'])
+              '周深 - 重启.wav','周深 - 没关系.mp3'])
 page = st.sidebar.radio("我的首页",["我的主页","我的兴趣推荐","我的图片工具箱","我的计算器","我的智慧词典","我的留言区","我的朋友圈","我的python旅程","生米的基本素养"])
 def img_change1(img,rc,gc,bc):
     new_img=img
